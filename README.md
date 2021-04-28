@@ -75,6 +75,6 @@
 3. copy .npmrc file to the project folder
 4. edit package.json
    - change publishConfig registry value with Artifact registy url
-   - delete husky : ....
+   - delete husky : {...}
 5. npm publish
 ```
