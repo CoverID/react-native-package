@@ -1,13 +1,12 @@
 # react-native-package
 
-#How to create react native package (Azure DevOps)
+# How to create react native package (Azure DevOps)
 
 ![alt text](screenshot.png)
 
 ```sh
 1. npx create-react-native-library library-name
-2. also change publishConfig registry value to Azure Artifact registry url
-3. change devDependencies value to this:
+2. change devDependencies value to this:
    {
       "@babel/core": "^7.12.10",
       "@babel/runtime": "^7.12.5",
@@ -53,8 +52,8 @@
       "typescript": "^4.1.3",
       "uuid": "^7.0.3"
     }
-4. copy src folder (overwrite) or you can modify this sample folder
-5. change example/src/App.tsx to:
+3. copy src folder (overwrite) or you can modify this sample folder
+4. change example/src/App.tsx to:
     import * as React from 'react';
 
     import Bm7Component from 'react-native-bm7-component';
@@ -63,7 +62,16 @@
       return <Bm7Component.App />;
     }
 
-6. npm install
-7. cd example && npm install
-8. npx react-native run-android
+5. npm install
+6. cd example && npm install
+7. npx react-native run-android
+```
+
+# How to publish (Azure DevOps)
+
+```sh
+1. goto Artifacts in Azure DevOps click "Connect to Feed" and choose npm
+2. follow the instruction at "Other" tab menu to generate .npmrc file
+3. copy .npmrc file to the project folder
+4. npm publish
 ```
