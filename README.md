@@ -76,7 +76,6 @@
 4. edit package.json
    - change publishConfig registry value with Artifact registy url
    - delete 
-      > husky: {...}
-      > "prepare": "bob build",
+      husky: {...}
 5. npm publish
 ```
