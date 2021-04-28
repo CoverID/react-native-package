@@ -73,5 +73,7 @@
 1. goto Artifacts in Azure DevOps click "Connect to Feed" and choose npm
 2. follow the instruction at "Other" tab menu to generate .npmrc file
 3. copy .npmrc file to the project folder
-4. npm publish
+4. edit package.json
+   change publishConfig registry value with Artifact registy url
+5. npm publish
 ```
