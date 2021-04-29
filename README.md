@@ -56,7 +56,7 @@
 4. change example/src/App.tsx to:
     import * as React from 'react';
 
-    import Bm7Component from 'react-native-bm7-component';
+    import Bm7Component from 'react-native-library-name';
 
     export default function App() {
       return <Bm7Component.App />;
